@@ -84,7 +84,7 @@ nav .nav-links ul li:hover::after{
 }
 .text-box p{
     margin:40px 0 10px;
-    font-size:14px;
+    font-size:16px;
     color: var(--font-color);
 }
 .master-btn{
@@ -294,14 +294,72 @@ p{
     background-color:#fff3f3;
     padding:20px;
     cursor: pointer;
+    display: flex;
+    border-radius: var(--master-border-radius);
+    -webkit-border-radius: var(--master-border-radius);
+    -moz-border-radius: var(--master-border-radius);
+    -ms-border-radius: var(--master-border-radius);
+    -o-border-radius: var(--master-border-radius);
 }
 .testimonials-col img{
-    width:100px;
-    height:100px;
-    display: inline;
-    border-radius:50%;
+    width:60px;
+    height:60px;
+    margin: 15px 30px auto 5px; 
+    border-radius:50%; 
     -webkit-border-radius:50%;
     -moz-border-radius:50%;
     -ms-border-radius:50%;
     -o-border-radius:50%;
+}
+.testimonials-col p{
+    padding: 0px;
+    margin-top: 15px;
+}
+.testimonials-col .fa-solid{
+    color: var(--master-color);
+}
+.testimonials-col h3{
+    margin-top: 5px 0px;
+}
+
+/* Call To Action Section */
+.cta{
+    width:var(--master-width);
+    margin:100px auto;
+    background-image: linear-gradient(rgba(0 0 0 / .7), rgba(0 0 0 / .7) ), url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align:center;
+    padding:100px 0;
+    border-radius:var(--master-border-radius);
+    -webkit-border-radius:var(--master-border-radius);
+    -moz-border-radius:var(--master-border-radius);
+    -ms-border-radius:var(--master-border-radius);
+    -o-border-radius:var(--master-border-radius);
+}
+.cta h1{
+    color: var(--font-color);
+    margin-bottom:15px;
+}
+@media (max-width: 600px){
+    .cta h1{
+        font-size:22px;
+    } 
+}
+
+/* Footer */
+footer{
+    width:100%;
+    text-align:center;
+    padding:30px 0;
+    margin-bottom:40px;
+}
+.footer h4{
+    margin:25px 0px;
+    font-weight: 600;
+}
+.icons .fa-brands{
+    color: var(--master-color);
+    margin:0px 10px;
+    cursor:pointer;
 }
