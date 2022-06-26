@@ -1,0 +1,307 @@
+/* main attributes to browser page bruh */
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --master-color:#f44336;
+    --font-color:white;
+    --master-width:80%;
+    --master-border-radius: 10px;
+}
+/* first page header consist of nav bar with our logo */
+.main-header{
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient( rgba(4 9 30 / 0.7), rgba(4 9 30 / 0.7)), url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items:center; 
+}
+
+nav img{
+    margin: 10px 20px;
+    width: 150px;
+}
+
+nav .nav-links{
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav .nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px 20px;
+    position: relative;
+}
+nav .nav-links ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+nav .nav-links ul li::after{
+    position: absolute;
+    content: " ";
+    height: 2px;
+    width: 0%;
+    background-color: var(--master-color);
+    display: block;
+    margin: auto;
+}
+
+nav .nav-links ul li:hover::after{
+    width: 80%;
+}
+/* first page main content */
+
+.text-box{
+    width:90%;
+    color: var(--font-color);
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    -webkit-transform:translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%);
+    -o-transform:translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size:60px;
+}
+.text-box p{
+    margin:40px 0 10px;
+    font-size:14px;
+    color: var(--font-color);
+}
+.master-btn{
+    display: inline-block;
+    text-decoration:none;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color:transparent;
+    cursor: pointer;
+}
+.master-btn:hover{
+    background-color: var(--master-color);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+/* our header media query for mobile screen */
+@media (max-width:600px) {
+    
+    .text-box h1{
+        font-size:20px;
+    }
+    
+    .text-box p{
+        font-size:7px;
+    }
+    nav .nav-links ul li{
+        display:block;
+    }
+    nav .nav-links{
+        position:fixed;
+        background-color: var(--master-color);
+        height:100%;
+        width:200px;
+        top:0;
+        right:-200px;
+        z-index: 1;
+        text-align: left;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+}
+    nav .fa-solid{
+        display: block;
+        color:var(--font-color);
+        font-size: 22px;
+        cursor: pointer;
+        padding-right: var(--master-border-radius);
+    }
+    
+}
+/* media query for header in web screen  */
+@media (min-width:600px){
+    .main-header .fa-solid{
+        display: none;
+    }
+}
+
+/* second content of index page (sections) + campus section + Facilities  */
+.course,
+.campus,
+.facilities,
+.testimonials{
+    width:var(--master-width);
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+h1{
+    font-size: 36px;
+    font-weight:600;
+}
+p{
+    color: #888;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top:5%;
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: repeat(3,33.3%);  */
+}
+.course-col{
+    flex-basis: 30%;
+    background-color:#fff3f3;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    -webkit-border-radius: var(--master-border-radius);
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+    -o-transition:.5s;
+}
+.course-col h1{
+    margin: 10px 0px;
+    font-weight: 600;
+
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .2);
+}
+
+/* media query of second content (Sections) */
+@media (max-width:600px){
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* campus section  */
+.campus-col{
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    flex-basis: 30%;
+    border-radius: var(--master-border-radius);
+    -webkit-border-radius: var(--master-border-radius);
+    -moz-border-radius: var(--master-border-radius);
+    -ms-border-radius: var(--master-border-radius);
+    -o-border-radius: var(--master-border-radius);
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.layer:hover{
+    background-color:rgba(229,39,39,0.7)
+}
+.layer h3{
+    width: 100%;
+    color: var(--font-color);
+    font-weight: 500;
+    font-size: 24px;
+    position: absolute;
+    bottom: 0px;
+    opacity: 0.0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* Facilities Section */
+
+.facilities-col{
+    text-align: left;
+    margin-bottom: 5%;
+    flex-basis: 30%;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: var(--master-border-radius);
+    -webkit-border-radius: var(--master-border-radius);
+    -moz-border-radius: var(--master-border-radius);
+    -ms-border-radius: var(--master-border-radius);
+    -o-border-radius: var(--master-border-radius);
+}
+.facilities-col p{
+    padding:0;
+}
+.facilities-col h3{
+    text-align: left;
+    margin:16px 0px;
+}
+
+/*  Testimonials Section  */
+.testimonials-col{
+    flex-basis: 49%;
+    margin-bottom: 5%;
+    text-align: left;
+    background-color:#fff3f3;
+    padding:20px;
+    cursor: pointer;
+}
+.testimonials-col img{
+    width:100px;
+    height:100px;
+    display: inline;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
