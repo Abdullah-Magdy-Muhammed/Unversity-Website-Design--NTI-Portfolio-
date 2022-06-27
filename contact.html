@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contact</title>
+        <title>About</title>
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,87 @@
 
     </head>
     <body>
-        <div>contact</div>
+        <header class="sub-header">
+            <nav>
+                <a href="http://"><img src="images/logo.png" alt="LOGO"></a>
+                <div class="nav-links" id="nav-list">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>CONTACT US</h1>
+        </header>
+        <section class="contact">
+            <div class="location">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7290572.78896071!2d35.373229882053906!3d26.84472301621937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z2YXYtdix!5e0!3m2!1sar!2seg!4v1656327882967!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-us">
+                <div class="row-contact">
+                    <div class="contact-col-left">
+                        <div>
+                            <i class="fa-solid fa-house"></i>
+                            <span>
+                                <h5>Austorad Road,NTI Building</h5>
+                                <p>
+                                    M.Nasr, Cairo, Egypt
+                                </p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-phone"></i>
+                            <span>
+                                <h5>+20 1093322105</h5>
+                                <p>
+                                    Monday To Sunday, 10 AM to 5 PM
+                                </p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>
+                                <h5>info@nti.com</h5>
+                                <p>
+                                    Email us your query
+                                </p>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="contact-col right">
+                        <form action="">
+                            <input type="text" placeholder="Enter Your Name">
+                            <input type="text" placeholder="Enter Your Email">
+                            <input type="text" placeholder="Enter Your Subject">
+                            <textarea name="" id=""rows="10"></textarea>
+                            <button class="master-btn second-btn">Send Message</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h4>ABOUT US</h4>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Id, atque. Sit dolor ut enim quis,<br>obcaecati ipsa consectetur.
+                Odit, enim distinctio. Cumque repellat.
+            </p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Made With<i class="fa-solid fa-copyright"></i>NTI Training.</p>
+        </footer>
             
     </body>
 </html>

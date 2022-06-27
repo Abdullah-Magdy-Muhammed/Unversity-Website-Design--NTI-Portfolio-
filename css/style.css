@@ -421,3 +421,134 @@ footer{
         flex-direction: column;
     }
 }
+
+/* Blog Page */
+.row-2{
+    grid-template-columns: 2fr 1fr;
+    display: grid;
+    gap:20px;
+
+}
+.blog-content{
+    width:var(--master-width);
+    margin:auto;
+    padding:60px 0px;
+
+}
+.blog-col-left img{
+    width: 100%;
+}
+.blog-col-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0px;
+}
+.blog-col-left p{
+    padding:0px;
+    margin-bottom: 30px;
+}
+/* form for Comments  */
+.comment-box {
+    border: 1px solid #ccc;
+    margin:50px 0px;
+    padding:10px 20px;
+}
+.comment-box h3{
+    text-align:left;
+    margin-bottom: 10px;
+}
+.comment-form input,
+.comment-form textarea{
+    width:100%;
+    display:block;
+    background-color: #f0f0f0;
+    border:none;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 20px 10px;
+}
+.blog-col-right h3{
+    background-color:var(--master-color);
+    color:var(--font-color);
+    padding:10px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.blog-col-right > div{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 8px;
+    box-sizing: border-box;
+    color: #666;
+}
+.blog-col-right > div:hover{
+    background-color:#999;
+    color: var(--font-color);
+}
+/* blog media query */
+@media (max-width:600px){
+    .sub-header h1{
+        font-size:24px;
+    }
+    .row-2{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Page */
+.location{
+    width:var(--master-width);
+    margin:auto;
+    padding:80px 0px;
+}
+iframe{
+    width:100%;
+}
+.contact-us{
+    width:var(--master-width);
+    margin: auto;
+}
+.contact-col{
+    margin-bottom: 30px;
+}
+.contact-col-left div{
+    display:flex;
+    margin-bottom: 40px;
+    align-items: center;
+
+}
+.contact-col-left div .fa-solid{
+    color:var(--master-color);
+    margin: 20px 30px;
+}
+.contact-col-left div h5{
+    margin-left: 10px;
+    font-size: 17px;
+    color:#444;
+    font-weight: 400;
+}
+.contact-col input,
+.contact-col textarea{
+    width:100%;
+    border: 1px solid #eee;
+    outline: none;
+    display: block;
+    padding: 15px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.row-contact{
+    display:flex;
+    justify-content:space-between;
+}
+.contact-col{
+    flex-basis: 49%;
+}
+/* Contact Us page media query */
+@media (max-width:600px){
+    .row-contact{
+        display:flex;
+        flex-direction: column;
+    }
+}
